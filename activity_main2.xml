@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.akash.m_ps.Main2Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/iv1"
+        android:layout_weight="1.4"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv3"
+        android:src="@mipmap/park2"
+        android:layout_below="@+id/iv1"
+        android:layout_above="@+id/bb1"
+        android:layout_weight="1.3"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bb1"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Getting Started"
+       android:layout_alignParentBottom="true"
+        android:layout_weight=".3"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
